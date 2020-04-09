@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneActivity">
+
+    <TextView
+        android:id="@+id/tittlePhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukkan nomor ponsel"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtInputPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tittlePhone"
+        android:layout_marginTop="50dp"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:hint="Nomor Ponsel"
+            android:textColorHint="#0000ff"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnLanjutPhone"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtInputPhone"
+        android:text="Selanjutnya"
+        android:textColor="@android:color/white"
+        android:background="#0000ff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daftar Dengan Alamat Email"
+        android:textColor="#0000ff"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

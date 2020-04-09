@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/coverFb"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/fb"/>
+
+    <RelativeLayout
+        android:id="@+id/bahasa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/coverFb"
+        android:gravity="center">
+
+    <TextView
+        android:id="@+id/english"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="English"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/melayu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="* Melayu"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/english"/>
+
+    <TextView
+        android:id="@+id/lainnya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="* Lainnya..."
+        android:layout_toRightOf="@id/melayu"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#0000ff"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailOrNo"
+        android:layout_below="@id/bahasa"
+        android:gravity="center"
+        android:layout_marginTop="50dp">
+    <EditText
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bahasa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:hint="Telepon atau email"
+        android:ems="10"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:id="@+id/katasandi"
+        android:layout_below="@id/emailOrNo"
+        android:gravity="center">
+    <EditText
+
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailOrNo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:hint="Kata Sandi"
+        android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnMasuk"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/katasandi"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="Masuk"
+        android:textColor="@android:color/white"
+        android:background="#0000ff"/>
+
+    <TextView
+        android:id="@+id/lupaKataSandi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lupa Kata Sandi ?"
+        android:textColor="#0000ff"
+        android:textSize="14sp"
+        android:layout_below="@id/btnMasuk"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/btnakunBaru"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lupaKataSandi"
+        android:text="Buat Akun Facebook Baru"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="#00e600"/>
+
+</RelativeLayout>

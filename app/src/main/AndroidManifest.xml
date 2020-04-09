@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="alfibaihaqi.e.tugasadev1">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <activity android:name=".MenuActivity"
+            android:label="Menu"
+            android:theme="@style/Base2"
+            android:parentActivityName=".MenuActivity"/>
+
+        <activity
+            android:name=".PasswordActivity"
+            android:label="Kata Sandi"
+            android:parentActivityName=".PasswordActivity"
+            android:theme="@style/Base2" />
+
+        <activity
+            android:name=".PhoneActivity"
+            android:label="Nomor Ponsel"
+            android:parentActivityName=".PhoneActivity"
+            android:theme="@style/Base2" />
+
+        <activity
+            android:name=".GenderActivity"
+            android:label="Jenis Kelamin"
+            android:parentActivityName=".GenderActivity"
+            android:theme="@style/Base2" />
+
+        <activity
+            android:name=".DateActivity"
+            android:label="Tanggal Lahir"
+            android:parentActivityName=".DateActivity"
+            android:theme="@style/Base2" />
+
+        <activity
+            android:name=".NameActivity"
+            android:label="Nama"
+            android:parentActivityName=".NameActivity"
+            android:theme="@style/Base2" />
+
+        <activity
+            android:name=".FirstActivity"
+            android:label="Buat Akun"
+            android:parentActivityName=".FirstActivity"
+            android:theme="@style/Base2" />
+
+        <activity
+            android:name=".MainActivity" />
+
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
